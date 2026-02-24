@@ -1,26 +1,25 @@
-<!-- Zphisher -->
+<!-- Zphisher (Fork) -->
 
 <p align="center">
   <img src=".github/misc/logo.png">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-2.3.5-green?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/htr-tech/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/htr-tech/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/htr-tech/zphisher?color=red&style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/htr-tech/zphisher?color=teal&style=for-the-badge">
+  <img src="https://img.shields.io/badge/Version-3.0.0-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Fork-Yes-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Education%20Only-Yes-red?style=for-the-badge">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Author-htr--tech-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Author-Muhammad%20Taezeem-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Forked%20From-htr--tech%2Fzphisher-purple?style=flat-square">
   <img src="https://img.shields.io/badge/Open%20Source-Yes-darkgreen?style=flat-square">
   <img src="https://img.shields.io/badge/Maintained%3F-Yes-lightblue?style=flat-square">
   <img src="https://img.shields.io/badge/Written%20In-Bash-darkcyan?style=flat-square">
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fhtr-tech%2Fzphisher&title=Visitors&edge_flat=false"/></a>
 </p>
 
-<p align="center"><b>A beginners friendly, Automated phishing tool with 30+ templates.</b></p>
+<p align="center"><b>A beginners friendly, Automated phishing tool with 45+ templates.</b></p>
+<p align="center"><i>Forked from <a href="https://github.com/htr-tech/zphisher">htr-tech/zphisher</a> — For educational purposes only.</i></p>
 
 ##
 
@@ -28,24 +27,48 @@
 
 <i>Any actions and or activities related to <b>Zphisher</b> is solely your responsibility. The misuse of this toolkit can result in <b>criminal charges</b> brought against the persons in question. <b>The contributors will not be held responsible</b> in the event any criminal charges be brought against any individuals misusing this toolkit to break the law.
 
-<b>This toolkit contains materials that can be potentially damaging or dangerous for social media</b>. Refer to the laws in your province/country before accessing, using,or in any other way utilizing this in a wrong way.
+<b>This toolkit contains materials that can be potentially damaging or dangerous for social media</b>. Refer to the laws in your province/country before accessing, using, or in any other way utilizing this in a wrong way.
 
-<b>This Tool is made for educational purposes only</b>. Do not attempt to violate the law with anything contained here. <b>If this is your intention, then Get the hell out of here</b>!
+<b>This Tool is made for EDUCATIONAL PURPOSES ONLY</b>. Do not attempt to violate the law with anything contained here. <b>If this is your intention, then Get the hell out of here</b>!
 
-It only demonstrates "how phishing works". <b>You shall not misuse the information to gain unauthorized access to someones social media</b>. However you may try out this at your own risk.</i>
+It only demonstrates "how phishing works". <b>You shall not misuse the information to gain unauthorized access to someones social media</b>. However you may try out this at your own risk.
+
+<b>This is a fork maintained by Muhammad Taezeem strictly for educational and research purposes.</b></i>
 
 ##
 
 ### Features
 
-- Latest and updated login pages.
-- Beginners friendly
-- Multiple tunneling options
+- Latest and updated login pages
+- **45+ phishing templates** across categorized platforms
+- Beginners friendly with improved UI/UX
+- **5 tunneling options:**
   - Localhost
-  - Cloudflared
+  - Cloudflared (Recommended)
   - LocalXpose
-- Mask URL support 
-- Docker support
+  - **Ngrok** *(NEW)*
+  - **Serveo** *(NEW - SSH-based, no setup)*
+- Mask URL support with multiple URL shorteners
+- **CLI argument support** (`--help`, `--version`, `--log`, `--creds`, `--ips`, `--clean`)
+- **Session logging** to `zphisher.log`
+- **Categorized menu** (Social Media, Entertainment, Gaming, Dev, Communication, Cloud/Finance)
+- Expanded port range support (1024-65535)
+- Progress indicators and spinner animations
+- Better error handling and colored status messages
+- Docker support with health checks
+
+### What's New in v3.0.0
+
+| Feature | Description |
+|---------|-------------|
+| Ngrok Tunnel | Full ngrok v3 integration with auth token support |
+| Serveo Tunnel | SSH-based tunneling - no binary download needed |
+| 13 New Templates | Disney+, Telegram, WhatsApp, Signal, Coinbase, Shopify, etc. |
+| CLI Arguments | `--help`, `--version`, `--log`, `--creds`, `--ips`, `--clean` |
+| Session Logging | All events logged to `zphisher.log` |
+| Categorized Menu | Platforms grouped by category for easier navigation |
+| Modern UI | Box-drawing banners, spinners, progress bars, ✓/✗ indicators |
+| Better Bash | Local variables, proper quoting, `command -v`, helper functions |
 
 ##
 
@@ -75,6 +98,19 @@ $ zphisher
 ```
 ### A Note : 
 ***Termux discourages hacking*** .. So never discuss anything related to *zphisher* in any of the termux discussion groups. For more check : [wiki](https://wiki.termux.com/wiki/Hacking)
+
+##
+
+### CLI Usage
+
+```
+$ bash zphisher.sh --help       # Show help message
+$ bash zphisher.sh --version    # Show version
+$ bash zphisher.sh --log        # View recent log entries
+$ bash zphisher.sh --creds      # View saved credentials
+$ bash zphisher.sh --ips        # View saved victim IPs
+$ bash zphisher.sh --clean      # Clean all temp files
+```
 
 ##
 
@@ -135,6 +171,9 @@ $ zphisher
 - `git`
 - `curl`
 - `php`
+- `unzip`
+- `wget`
+- `ssh` *(for Serveo tunnel)*
 
 > All the dependencies will be installed automatically when you run **Zphisher** for the first time.
 </details>
@@ -159,8 +198,15 @@ $ zphisher
 
 ##
 
-### Find Me on:
+### Fork Maintainer:
 <p align="left">
+  <b>Muhammad Taezeem</b><br>
+  <a href="https://github.com/taezeem" target="_blank"><img src="https://img.shields.io/badge/Github-blue?style=for-the-badge&logo=github"></a>
+</p>
+
+### Original Author:
+<p align="left">
+  <b>TAHMID RAYAT (htr-tech)</b><br>
   <a href="https://tahmidrayat.is-a.dev" target="_blank"><img src="https://img.shields.io/badge/Socials-grey?style=for-the-badge&logo=linktree"></a>
   <a href="https://github.com/htr-tech" target="_blank"><img src="https://img.shields.io/badge/Github-blue?style=for-the-badge&logo=github"></a>
 </p>

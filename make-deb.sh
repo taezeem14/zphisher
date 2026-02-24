@@ -2,7 +2,7 @@
 
 # Make Deb Package for Zphisher (^.^)
 _PACKAGE=zphisher
-_VERSION=2.3.5
+_VERSION=3.0.0
 _ARCH="all"
 PKG_NAME="${_PACKAGE}_${_VERSION}_${_ARCH}.deb"
 
@@ -30,10 +30,10 @@ cat <<- CONTROL_EOF > ./build_env/DEBIAN/control
 Package: ${_PACKAGE}
 Version: ${_VERSION}
 Architecture: ${_ARCH}
-Maintainer: @htr-tech
+Maintainer: Muhammad Taezeem (Fork)
 Depends: ${_depend}
 Homepage: https://github.com/htr-tech/zphisher
-Description: An automated phishing tool with 30+ templates. This Tool is made for educational purpose only !
+Description: An automated phishing tool with 45+ templates. This Tool is made for EDUCATIONAL PURPOSES ONLY!
 CONTROL_EOF
 
 cat <<- PRERM_EOF > ./build_env/DEBIAN/prerm
